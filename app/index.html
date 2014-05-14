@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>dateAPP</title>
+        <title>The Chooser</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
@@ -17,6 +17,7 @@
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
         <!-- endbuild -->
 
     </head>
@@ -50,7 +51,7 @@
 
                     <form action="">
 
-                    <textarea name="rzip" class="rzip" cols="30" rows="1" placeholder="What's your zip?"></textarea>
+                    <input name="rzip" class="rzip" cols="30" rows="1" placeholder="What's your zip?"></input>
 
                     <button type="submit" class="zipsub" id="rsubmit">SUBMIT</button>
 
@@ -70,9 +71,9 @@
 
                         <form action="">
 
-                        <textarea name="azip" id="azip" cols="30" rows="1" placeholder="What's your zip?"></textarea>
+                        <input name="azip" id="azip" cols="30" rows="1" placeholder="What's your zip?"></input>
 
-                        <button type="submit" id="asubmit">SUBMIT</button>
+                        <button type="submit" class="actzip" id="asubmit">SUBMIT</button>
 
                         </form>
 
@@ -82,6 +83,9 @@
 
             </div><!--end row chooser-->
 
+            <div class="footer">
+                <p>Inspired by the 4Functioneers Date Generator</p>
+            </div><!--end footer-->
         
 
         </div><!--end contain-->
